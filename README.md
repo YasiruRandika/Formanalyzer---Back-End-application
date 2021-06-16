@@ -2,4 +2,4 @@ cd RepoName
 
 npm install
 
-npm start
+node app.js

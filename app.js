@@ -52,7 +52,7 @@ app.use("/api/analyze", (req, res, next) => {
     return res.status(400).send("No files were uploaded.");
   }
   let file = req.files.file;
-  uploadPath = __dirname + "\\uploads\\" + new Date().getTime() + ".jpg";
+  uploadPath = __dirname + "/uploads/" + new Date().getTime() + ".jpg";
   file.mv(uploadPath, async () => {
     recognizeForm(uploadPath).then((result) => {
       return res.status(200).json({

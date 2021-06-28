@@ -63,9 +63,9 @@ app.use("/api/analyze", (req, res, next) => {
 });
 
 async function recognizeForm(file) {
-  const endpoint = "https://myformanalyzeryr.cognitiveservices.azure.com/";
-  const apiKey = "5145bd97af024ad7b2f11c0e9de8849e";
-  const modelId = "24055ea7-35e6-4bb4-b24e-af767aada9fd";
+  const endpoint = "https://testformrecyr.cognitiveservices.azure.com/";
+  const apiKey = "fe706b55e3954f42b1cc0c8ad7d66b0c";
+  const modelId = "fa7f7196-8a46-413d-bbc4-ce4057ebb03e";
   console.log("Entering Forms Recognizer");
 
   let fileStream = fs.createReadStream(file);
